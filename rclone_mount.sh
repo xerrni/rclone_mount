@@ -33,7 +33,7 @@ fi
 rclone mount "${src}" "${dest}" --allow-other &
 if [[ "$verbose" == "1" ]]
 then
-        #wait for 5 seconds before trying if dir was succesfully mounted
+        #wait for 5 seconds before checking if dir was succesfully mounted
         sleep 5
         if [[ `ls ${dest} | wc -l` != "0" ]]
         then
